@@ -1,0 +1,20 @@
+{
+    "name": "Subject",
+    "routePrefix": "subjects",
+    "crtNo": true,
+    "buttons": ["excel", "create", "show", "edit", "destroy"],
+    "columns": [
+        {
+            "label": "Subject Code",
+            "name": "code",
+            "data": "subjects.code",
+            "meta": ["searchable", "sortable"]
+        },
+        {
+            "label": "Subject Name",
+            "name": "name",
+            "data": "subjects.name",
+            "meta": ["searchable", "sortable"]
+        }
+    ]
+}

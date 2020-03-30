@@ -1,0 +1,29 @@
+{
+    "name": "sibtain/subjects",
+    "type": "library",
+    "description": "",
+    "authors": [],
+    "keywords": [],
+    "homepage": "https://www.laravel-enso.com",
+    "require": {
+        "php": ">=7.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sibtain\\Subjects\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sibtain\\Subjects\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sibtain\\Subjects\\AppServiceProvider",
+                "Sibtain\\Subjects\\AuthServiceProvider"
+            ]
+        }
+    }
+}

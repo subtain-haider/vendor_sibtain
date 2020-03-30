@@ -1,0 +1,30 @@
+{
+    "routePrefix": "subjects",
+    "sections": [{
+        "columns": 2,
+        "fields": [
+            {
+                "label": "Subject Code",
+                "name": "code",
+                "value": null,
+                "meta": {
+                    "custom": false,
+                    "type": "input",
+                    "content": "text",
+                    "disabled": false
+                }
+            },
+            {
+                "label": "Subject Name",
+                "name": "name",
+                "value": null,
+                "meta": {
+                    "custom": false,
+                    "type": "input",
+                    "content": "text",
+                    "disabled": false
+                }
+            }
+        ]
+    }]
+}

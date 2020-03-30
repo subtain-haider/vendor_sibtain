@@ -1,0 +1,29 @@
+{
+    "name": "sibtain/teachers",
+    "type": "library",
+    "description": "",
+    "authors": [],
+    "keywords": [],
+    "homepage": "https://www.laravel-enso.com",
+    "require": {
+        "php": ">=7.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sibtain\\Teachers\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sibtain\\Teachers\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sibtain\\Teachers\\AppServiceProvider",
+                "Sibtain\\Teachers\\AuthServiceProvider"
+            ]
+        }
+    }
+}

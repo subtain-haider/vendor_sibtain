@@ -1,0 +1,92 @@
+{
+    "name": "Teacher",
+    "routePrefix": "teacher",
+    "crtNo": true,
+    "buttons": ["excel", "create", "show", "edit", "destroy"],
+    "columns": [
+        {
+            "label": "Name",
+            "name": "name",
+            "data": "teachers.name",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "CNIC",
+            "name": "cnic",
+            "data": "teachers.cninc",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Phone Number",
+            "name": "phone_number",
+            "data": "teachers.phone_number",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Email",
+            "name": "email",
+            "data": "teachers.email",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+
+        {
+            "label": "Subject",
+            "name": "subject",
+            "data": "teachers.subject",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Campus",
+            "name": "campus",
+            "data": "teachers.campus",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+
+        {
+            "label": "Joining Date",
+            "name": "joining_date",
+            "data": "teachers.joining_date",
+            "meta": [
+                "sortable",
+                "date"
+            ]
+        },
+        {
+            "label": "Qualification",
+            "name": "qualification",
+            "data": "teachers.qualification",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Status",
+            "name": "status",
+            "data": "teachers.status",
+            "enum": "Sibtain\\Teachers\\App\\Enums\\TeacherStatus",
+            "meta": [
+                "sortable",
+                "slot"
+            ]
+        }
+    ]
+}

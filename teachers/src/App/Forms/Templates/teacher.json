@@ -1,0 +1,85 @@
+{
+    "routePrefix": "teacher",
+    "sections": [{
+        "columns": 2,
+        "fields": [
+            {
+                "label": "Name",
+                "name": "name",
+                "value": "",
+                "meta": {
+                    "type": "input",
+                    "content": "text"
+                }
+            },
+            {
+                "label": "CNIC",
+                "name": "cnic",
+                "value": "",
+                "meta": {
+                    "type": "input",
+                    "content": "text"
+                }
+            },
+            {
+                "label": "Phone Number",
+                "name": "phone_number",
+                "value": "",
+                "meta": {
+                    "type": "input",
+                    "content": "text"
+                }
+            },
+            {
+                "label": "Email Address",
+                "name": "email",
+                "value": "",
+                "meta": {
+                    "type": "input",
+                    "content": "text"
+                }
+            },
+            {
+                "label": "Qualification",
+                "name": "qualification",
+                "value": "",
+                "meta": {
+                    "type": "input",
+                    "content": "text"
+                }
+            },
+            {
+                "label": "Joining Date",
+                "name": "joining_date",
+                "value": null,
+                "meta": {
+                    "type": "datepicker"
+                }
+            },
+
+            {
+                "label": "Subjects",
+                "name": "subjectIds",
+                "value": [],
+                "meta": {
+                    "type": "select",
+                    "multiple": true,
+                    "options": []
+                }
+            },
+            {
+                "label": "Campus",
+                "name": "campus_id",
+                "value": null,
+                "meta": {
+                    "type": "select",
+                    "multiple": false,
+                    "options": []
+                }
+            }
+
+
+
+        ]
+    }]
+}
