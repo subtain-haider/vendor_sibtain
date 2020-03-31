@@ -12,6 +12,8 @@ class Store extends Controller
     {
         $classRoom->fill($request->validated())->save();
 
+        $classRoom->updateMembers($request->get('subjectIds'));
+
         return [
             'message' => __('The class room was successfully created'),
             'redirect' => 'classroom.edit',

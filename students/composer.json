@@ -1,0 +1,24 @@
+{
+    "name": "sibtain/students",
+    "type": "library",
+    "description": "",
+    "authors": [],
+    "keywords": [],
+    "homepage": "https://www.laravel-enso.com",
+    "require": {
+        "php": ">=7.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sibtain\\Students\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sibtain\\Students\\AppServiceProvider",
+                "Sibtain\\Students\\AuthServiceProvider"
+            ]
+        }
+    }
+}

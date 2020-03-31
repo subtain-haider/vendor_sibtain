@@ -22,7 +22,7 @@ class Teacher extends Model
 
     public function classroom()
     {
-        return $this->belongsTo(ClassRoom::class);
+        return $this->belongsToMany(ClassRoom::class);
     }
 
 

@@ -17,6 +17,7 @@ class TeacherTable implements Table
 //            Teacher::with(['subjects'])->latest()->get()
 //        );
         return Teacher::selectRaw('teachers.id,teachers.name,teachers.cnic,teachers.phone_number,teachers.email,teachers.qualification,campuses.name as campus,teachers.status,teachers.joining_date')->leftJoin('campuses', 'teachers.campus_id', '=', 'campuses.id');
+//            return  Teacher::all();
     }
 
     public function templatePath(): string

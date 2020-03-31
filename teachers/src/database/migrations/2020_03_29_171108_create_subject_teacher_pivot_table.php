@@ -9,6 +9,8 @@ class CreateSubjectTeacherPivotTable extends Migration
     public function up()
     {
         Schema::create('subject_teacher', function (Blueprint $table) {
+            $table->increments('id');
+
             $table->integer('teacher_id')->unsigned()->index();
             $table->foreign('teacher_id')->references('id')->on('teachers')
                 ->onUpdate('cascade')->onDelete('cascade');

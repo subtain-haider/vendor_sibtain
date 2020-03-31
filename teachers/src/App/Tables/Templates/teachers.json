@@ -42,15 +42,6 @@
         },
 
         {
-            "label": "Subject",
-            "name": "subject",
-            "data": "teachers.subject",
-            "meta": [
-                "searchable",
-                "sortable"
-            ]
-        },
-        {
             "label": "Campus",
             "name": "campus",
             "data": "teachers.campus",

@@ -1,0 +1,108 @@
+{
+    "routePrefix": "students",
+    "sections": [
+        {
+        "columns": 2,
+        "fields": [
+            {
+                "label": "Campus",
+                "name": "campus_id",
+                "value": null,
+                "meta": {
+                    "type": "select",
+                    "multiple": false,
+                    "options": []
+                }
+            },
+            {
+                "label": "Class",
+                "name": "class_roomIds",
+                "value": null,
+                "meta": {
+                    "type": "select",
+                    "multiple": false,
+                    "options": []
+                }
+            },
+            {
+                "label": "Name",
+                "name": "name",
+                "value": "",
+                "meta": {
+                    "type": "input",
+                    "content": "text"
+                }
+            },
+            {
+                "label": "CNIC",
+                "name": "cnic",
+                "value": "",
+                "meta": {
+                    "type": "input",
+                    "content": "text"
+                }
+            },
+            {
+                "label": "Phone Number",
+                "name": "phone_number",
+                "value": "",
+                "meta": {
+                    "type": "input",
+                    "content": "text"
+                }
+            },
+            {
+                "label": "Email Address",
+                "name": "email",
+                "value": "",
+                "meta": {
+                    "type": "input",
+                    "content": "text"
+                }
+            }
+        ]
+        },
+        {
+            "columns": 4,
+            "fields": [
+                {
+                    "label": "Father Name",
+                    "name": "father_name",
+                    "value": "",
+                    "meta": {
+                        "type": "input",
+                        "content": "text"
+                    }
+                },
+                {
+                    "label": "Father's Email",
+                    "name": "father_email",
+                    "value": "",
+                    "meta": {
+                        "type": "input",
+                        "content": "text"
+                    }
+                },
+                {
+                    "label": "Father's CNIC",
+                    "name": "father_cnic",
+                    "value": "",
+                    "meta": {
+                        "type": "input",
+                        "content": "text"
+                    }
+                },
+                {
+                    "label": "Father's Number",
+                    "name": "father_phone_number",
+                    "value": "",
+                    "meta": {
+                        "type": "input",
+                        "content": "text"
+                    }
+                }
+            ]
+        }
+
+    ]
+}

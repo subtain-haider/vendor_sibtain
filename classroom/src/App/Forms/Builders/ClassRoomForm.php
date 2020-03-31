@@ -5,6 +5,7 @@ namespace Sibtain\Classroom\App\Forms\Builders;
 use Sibtain\Campuses\App\Campus;
 use Sibtain\Classroom\App\ClassRoom;
 use LaravelEnso\Forms\App\Services\Form;
+use Sibtain\Subjects\App\Subject;
 use Sibtain\Teachers\App\Teacher;
 
 class ClassRoomForm
@@ -15,7 +16,7 @@ class ClassRoomForm
 
     public function __construct()
     {
-        $this->form = (new Form(static::TemplatePath))->options('teacher_id', Teacher::get(['id','name']))->options('campus_id', Campus::get(['id','name']));
+        $this->form = (new Form(static::TemplatePath))->options('subjectIds', Subject::get(['id','name']))->options('campus_id', Campus::get(['id','name']));
 
     }
 

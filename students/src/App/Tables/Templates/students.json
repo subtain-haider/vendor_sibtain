@@ -1,0 +1,54 @@
+{
+    "name": "Student",
+    "routePrefix": "students",
+    "crtNo": true,
+    "buttons": ["excel", "create", "show", "edit", "destroy"],
+    "columns": [
+        {
+            "label": "Name",
+            "name": "name",
+            "data": "students.name",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "CNIC",
+            "name": "cnic",
+            "data": "students.cninc",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Phone Number",
+            "name": "phone_number",
+            "data": "students.phone_number",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Email",
+            "name": "email",
+            "data": "students.email",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+
+        {
+            "label": "Campus",
+            "name": "campus",
+            "data": "students.campus",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        }
+    ]
+}

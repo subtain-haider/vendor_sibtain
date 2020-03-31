@@ -1,19 +1,14 @@
 {
     "name": "Class Room",
     "routePrefix": "classroom",
-    "crtNo": true,
+    "crtNo": false,
+    "preview": true,
     "buttons": ["excel", "create", "show", "edit", "destroy"],
     "columns": [
         {
-        "label": "Id",
-        "name": "id",
-        "data": "class_rooms.id",
-        "meta": ["searchable", "sortable", "rogue"]
-        },
-        {
-            "label": "Campus",
-            "name": "Campus",
-            "data": "campuses.name",
+            "label": "Abbreviation",
+            "name": "abbreviation",
+            "data": "class_rooms.abbreviation",
             "meta": [
                 "searchable",
                 "sortable"
@@ -29,45 +24,9 @@
             ]
         },
         {
-            "label": "Abbreviation",
-            "name": "abbreviation",
-            "data": "class_rooms.abbreviation",
-            "meta": [
-                "searchable",
-                "sortable"
-            ]
-        },
-        {
-            "label": "Session",
-            "name": "session",
-            "data": "class_rooms.session",
-            "meta": [
-                "searchable",
-                "sortable"
-            ]
-        },
-        {
-            "label": "Batch",
-            "name": "batch",
-            "data": "class_rooms.batch",
-            "meta": [
-                "searchable",
-                "sortable"
-            ]
-        },
-        {
-            "label": "Teacher",
-            "name": "teacher",
-            "data": "teachers.name",
-            "meta": [
-                "searchable",
-                "sortable"
-            ]
-        },
-        {
-            "label": "Date Created",
-            "name": "created_at",
-            "data": "teachers.created_at",
+            "label": "Campus",
+            "name": "campus",
+            "data": "class_rooms.campus",
             "meta": [
                 "searchable",
                 "sortable"

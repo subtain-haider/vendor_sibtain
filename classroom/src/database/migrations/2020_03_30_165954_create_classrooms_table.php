@@ -22,12 +22,12 @@ class CreateClassRoomsTable extends Migration
 
             $table->string('name');
             $table->string('abbreviation');
-            $table->string('session');
-            $table->string('batch');
+//            $table->string('session');
+//            $table->string('batch');
 
-            $table->integer('teacher_id')->unsigned()->nullable();
-            $table->foreign('teacher_id')->references('id')
-                ->on('teachers')->onDelete('set null');
+            $table->integer('subject_id')->unsigned()->nullable();
+            $table->foreign('subject_id')->references('id')
+                ->on('subjects')->onDelete('set null');
 
 
             $table->timestamps();

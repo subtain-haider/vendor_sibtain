@@ -4,6 +4,16 @@
         "columns": 2,
         "fields": [
             {
+                "label": "Campus",
+                "name": "campus_id",
+                "value": null,
+                "meta": {
+                    "type": "select",
+                    "multiple": false,
+                    "options": []
+                }
+            },
+            {
                 "label": "Class Name",
                 "name": "name",
                 "value": "",
@@ -22,21 +32,13 @@
                 }
             },
             {
-                "label": "Session",
-                "name": "session",
-                "value": "",
+                "label": "Subjects",
+                "name": "subjectIds",
+                "value": [],
                 "meta": {
-                    "type": "input",
-                    "content": "text"
-                }
-            },
-            {
-                "label": "Session",
-                "name": "session",
-                "value": "",
-                "meta": {
-                    "type": "input",
-                    "content": "text"
+                    "type": "select",
+                    "multiple": true,
+                    "options": []
                 }
             }
         ]
