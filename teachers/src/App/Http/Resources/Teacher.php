@@ -16,7 +16,7 @@ class Teacher extends JsonResource
             'phone_number' => $this->phone_number,
             'email' => $this->email,
             'qualification' => $this->qualification,
-            'campus_id' => $this->campus_id,
+            'company_id' => $this->company_id,
             'subjectIds' => $this->subjectIds(),
             'subject' => TrackWho::collection($this->whenLoaded('subjects')),
 //            'edit' => false,

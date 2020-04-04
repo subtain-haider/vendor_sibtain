@@ -13,6 +13,11 @@
             "Sibtain\\Students\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Sibtain\\Students\\": "src/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [

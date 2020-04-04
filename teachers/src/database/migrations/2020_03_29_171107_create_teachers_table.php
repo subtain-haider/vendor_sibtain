@@ -25,9 +25,9 @@ class CreateTeachersTable extends Migration
 //            $table->foreign('subject_id')->references('id')
 //                ->on('subjects')->onDelete('set null');
 
-            $table->integer('campus_id')->unsigned()->nullable();
-            $table->foreign('campus_id')->references('id')
-                ->on('campuses')->onDelete('set null');
+            $table->integer('company_id')->unsigned()->nullable();
+            $table->foreign('company_id')->references('id')
+                ->on('companies')->onDelete('set null');
 
             $table->unsignedTinyInteger('status')->default(1);
             $table->date('joining_date')->nullable();

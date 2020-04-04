@@ -3,26 +3,26 @@
 namespace Sibtain\Teachers\App;
 
 use Illuminate\Database\Eloquent\Model;
+use LaravelEnso\Companies\App\Models\Company;
 use LaravelEnso\Tables\App\Traits\TableCache;
-use Sibtain\Campuses\App\Campus;
-use Sibtain\Classroom\App\ClassRoom;
+use Sibtain\Classrooms\App\Models\Classroom;
 use Sibtain\Subjects\App\Subject;
 
 class Teacher extends Model
 {
     use TableCache;
 
-    protected $fillable = ['name', 'cnic', 'phone_number', 'email', 'qualification', 'campus_id', 'status', 'joining_date'];
+    protected $fillable = ['name', 'cnic', 'phone_number', 'email', 'qualification', 'company_id', 'status', 'joining_date'];
     protected $dates = ['joining_date'];
 
-    public function campus()
+    public function company()
     {
-        return $this->belongsTo(Campus::class);
+        return $this->belongsTo(Company::class);
     }
 
-    public function classroom()
+    public function classrooms()
     {
-        return $this->belongsToMany(ClassRoom::class);
+        return $this->belongsToMany(Classroom::class);
     }
 
 

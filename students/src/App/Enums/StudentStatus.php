@@ -1,19 +1,17 @@
 <?php
 
-namespace Sibtain\Teachers\App\Enums;
+namespace Sibtain\Students\App\Enums;
 
 use LaravelEnso\Enums\app\Services\Enum;
 
 class StudentStatus extends Enum
 {
     const ACTIVE = 1;
-    const GRADUATED = 2;
-    const EXPELLED = 3;
-    const DECEASED = 4;
+    const ONLEAVE = 2;
+    const DROPPED = 3;
     protected static array $data = [
         self::ACTIVE => 'Active',
-        self::GRADUATED => 'Graduated',
-        self::EXPELLED => 'Expelled',
-        self::DECEASED => 'Deceased',
+        self::ONLEAVE => 'Onleave',
+        self::DROPPED => 'Dropped',
     ];
 }

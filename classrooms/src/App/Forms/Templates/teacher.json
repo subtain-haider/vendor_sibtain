@@ -1,0 +1,40 @@
+{
+    "routePrefix": "administration.classrooms.teachers",
+    "sections": [
+        {
+            "columns": 2,
+            "fields": [
+                {
+                    "label": "Teacher",
+                    "name": "id",
+                    "value": null,
+                    "meta": {
+                        "type": "select",
+                        "source": "teachers.options"
+                    }
+                },
+                {
+                    "label": "Classrooom",
+                    "name": "classroom_id",
+                    "value": null,
+                    "meta": {
+                        "type": "input",
+                        "content": "number",
+                        "hidden": true
+                    }
+                },
+                {
+                    "label": "Position",
+                    "name": "position",
+                    "value": "",
+                    "meta": {
+                        "type": "input",
+                        "content": "text",
+                        "hidden": true
+
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 {
-    "name": "Student",
+    "name": "Students",
     "routePrefix": "students",
     "crtNo": true,
     "buttons": ["excel", "create", "show", "edit", "destroy"],
@@ -11,6 +11,34 @@
             "meta": [
                 "searchable",
                 "sortable"
+            ]
+        },
+        {
+            "label": "Class",
+            "name": "classroom",
+            "data": "students.classroom",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Campus",
+            "name": "company",
+            "data": "students.company",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Status",
+            "name": "status",
+            "data": "students.status",
+            "enum": "Sibtain\\Students\\App\\Enums\\StudentStatus",
+            "meta": [
+                "sortable",
+                "slot"
             ]
         },
         {
@@ -40,13 +68,75 @@
                 "sortable"
             ]
         },
-
         {
-            "label": "Campus",
-            "name": "campus",
-            "data": "students.campus",
+            "label": "Father's Name",
+            "name": "father_name",
+            "data": "students.name",
             "meta": [
                 "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Father's CNIC",
+            "name": "father_cnic",
+            "data": "students.cninc",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Father's Phone Number",
+            "name": "father_phone",
+            "data": "students.phone",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Father's Email",
+            "name": "father_email",
+            "data": "students.email",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Address",
+            "name": "address",
+            "data": "students.address",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "City",
+            "name": "city",
+            "data": "students.city",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Date of Birth",
+            "name": "dob",
+            "data": "students.dob",
+            "meta": [
+                "sortable",
+                "date"
+            ]
+        },
+        {
+            "label": "Gender",
+            "name": "gender",
+            "data": "students.gender",
+            "enum": "Sibtain\\Students\\App\\Enums\\StudentGender",
+            "meta": [
                 "sortable"
             ]
         }

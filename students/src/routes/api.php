@@ -8,8 +8,8 @@ Route::middleware(['web', 'auth', 'core'])
             ->prefix('api/students')
             ->as('students.')
             ->group(function () {
-                
-		Route::get('', 'Index')->name('index');
+
+//		Route::get('', 'Index')->name('index');
 		Route::get('create', 'Create')->name('create');
 		Route::post('', 'Store')->name('store');
 		Route::get('{student}/edit', 'Edit')->name('edit');

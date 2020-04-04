@@ -4,6 +4,8 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Collection;
 use LaravelEnso\Permissions\App\Models\Permission;
 use Sibtain\Subjects\App\Subject;
+use Sibtain\Teachers\App\Student;
+
 
 class SubjectSeeder extends Seeder
 {
@@ -12,7 +14,7 @@ class SubjectSeeder extends Seeder
         ['code' => 'CHM', 'name' => 'Chemistry'],
         ['code' => 'BIO', 'name' => 'Biology'],
         ['code' => 'ENG', 'name' => 'English'],
-        ['code' => 'URD', 'name' => 'Urdu'],
+        ['code' => 'URD', 'name' => 'URDU'],
         ['code' => 'ISL', 'name' => 'Islamiyat'],
         ['code' => 'MTH', 'name' => 'Math'],
         ['code' => 'STA', 'name' => 'Statistics'],
@@ -22,6 +24,10 @@ class SubjectSeeder extends Seeder
     public function run()
     {
         (new Collection(self::Subject))
-            ->each(fn ($subject) => factory(Subject::class)->create($subject));
+            ->each(fn ($subject) => factory(Subject::class)->create($subject)->each(function ($subject) {
+                $subject->teachers()->save(factory(Student::class)->make());
+            }));
+
+
     }
 }

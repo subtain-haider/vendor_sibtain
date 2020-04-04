@@ -22,7 +22,7 @@ class ValidateTeacherRequest extends FormRequest
             'qualification' => '|max:200',
             'subjectIds' => 'array',
 //            'subject_id' => 'required|exists:subjects,id',
-            'campus_id' => 'required|exists:campuses,id',
+            'company_id' => 'required|exists:companies,id',
             'joining_date' => 'nullable|date|before:tomorrow',
             'status' => '',
         ];

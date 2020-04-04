@@ -26,6 +26,6 @@ class CreateSubjectTeacherPivotTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('teacher_subject');
+        Schema::dropIfExists('subject_teacher');
     }
 }

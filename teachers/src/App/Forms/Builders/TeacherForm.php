@@ -2,9 +2,9 @@
 
 namespace Sibtain\Teachers\App\Forms\Builders;
 
-use Sibtain\Campuses\App\Campus;
+use LaravelEnso\Companies\App\Models\Company;
 use Sibtain\Subjects\App\Subject;
-use Sibtain\Teachers\App\Teacher;
+use Sibtain\Teachers\App\Student;
 use LaravelEnso\Forms\App\Services\Form;
 
 class TeacherForm
@@ -16,7 +16,7 @@ class TeacherForm
     public function __construct()
     {
 
-        $this->form = (new Form(static::TemplatePath))->options('subjectIds', Subject::get(['id','name']))->options('campus_id', Campus::get(['id','name']));
+        $this->form = (new Form(static::TemplatePath))->options('subjectIds', Subject::get(['id','name']))->options('company_id', Company::get(['id','name']));
     }
 
     public function create()
@@ -24,7 +24,7 @@ class TeacherForm
         return $this->form->create();
     }
 
-    public function edit(Teacher $teacher)
+    public function edit(Student $teacher)
     {
         return $this->form->edit($teacher);
     }

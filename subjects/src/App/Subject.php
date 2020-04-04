@@ -5,7 +5,7 @@ namespace Sibtain\Subjects\App;
 use Illuminate\Database\Eloquent\Model;
 use LaravelEnso\Tables\App\Traits\TableCache;
 use Sibtain\Classroom\App\ClassRoom;
-use Sibtain\Teachers\App\Teacher;
+use Sibtain\Teachers\App\Student;
 
 class Subject extends Model
 {
@@ -21,6 +21,6 @@ class Subject extends Model
     }
     public function teachers()
     {
-        return $this->belongsToMany(Teacher::class);
+        return $this->belongsToMany(Student::class);
     }
 }

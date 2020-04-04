@@ -1,0 +1,38 @@
+{
+    "routePrefix": "administration.classrooms",
+    "sections": [
+        {
+            "columns": 3,
+            "fields": [
+                {
+                    "label": "Campus",
+                    "name": "company_id",
+                    "value": null,
+                    "meta": {
+                        "type": "select",
+                        "multiple": false,
+                        "options": []
+                    }
+                },
+                {
+                    "label": "Name",
+                    "name": "name",
+                    "value": "",
+                    "meta": {
+                        "type": "input",
+                        "content": "text"
+                    }
+                },
+                {
+                    "label": "Abbreviation",
+                    "name": "abbreviation",
+                    "value": "",
+                    "meta": {
+                        "type": "input",
+                        "content": "text"
+                    }
+                }
+            ]
+        }
+    ]
+}

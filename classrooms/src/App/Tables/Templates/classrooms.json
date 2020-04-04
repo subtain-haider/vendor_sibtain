@@ -1,0 +1,49 @@
+{
+    "routePrefix": "administration.classrooms",
+    "crtNo": true,
+    "buttons": [
+        "excel",
+        "create",
+        "edit",
+        "destroy"
+    ],
+    "countCache": true,
+    "columns": [
+        {
+            "label": "Abbreviation",
+            "name": "abbreviation",
+            "data": "classrooms.abbreviation",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Name",
+            "name": "name",
+            "data": "classrooms.name",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Campus",
+            "name": "company",
+            "data": "classrooms.company",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Created at",
+            "name": "created_at",
+            "data": "classrooms.created_at",
+            "meta": [
+                "date",
+                "sortable"
+            ]
+        }
+    ]
+}

@@ -1,18 +1,20 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Collection;
-use LaravelEnso\Permissions\App\Models\Permission;
+use Sibtain\Classrooms\App\Models\Classroom;
+use Sibtain\Subjects\App\Subject;
 use Sibtain\Teachers\App\Teacher;
 
 class TeacherSeeder extends Seeder
 {
-    private const Teacher = [
-    ];
 
     public function run()
     {
-        (new Collection(self::Teacher))
-            ->each(fn ($teacher) => factory(Teacher::class)->create($teacher));
+        factory(Teacher::class, 50)->create()->each(function ($teacher){
+            $teacher->subjects()->sync(Subject::all()->random()->id,);
+            $teacher->classrooms()->sync(Classroom::all()->random()->id,);
+        });
+
+
     }
 }

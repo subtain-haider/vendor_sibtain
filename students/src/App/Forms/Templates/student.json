@@ -1,29 +1,8 @@
 {
     "routePrefix": "students",
-    "sections": [
-        {
+    "sections": [{
         "columns": 2,
         "fields": [
-            {
-                "label": "Campus",
-                "name": "campus_id",
-                "value": null,
-                "meta": {
-                    "type": "select",
-                    "multiple": false,
-                    "options": []
-                }
-            },
-            {
-                "label": "Class",
-                "name": "class_roomIds",
-                "value": null,
-                "meta": {
-                    "type": "select",
-                    "multiple": false,
-                    "options": []
-                }
-            },
             {
                 "label": "Name",
                 "name": "name",
@@ -44,7 +23,7 @@
             },
             {
                 "label": "Phone Number",
-                "name": "phone_number",
+                "name": "phone",
                 "value": "",
                 "meta": {
                     "type": "input",
@@ -59,50 +38,105 @@
                     "type": "input",
                     "content": "text"
                 }
-            }
-        ]
-        },
-        {
-            "columns": 4,
-            "fields": [
-                {
-                    "label": "Father Name",
-                    "name": "father_name",
-                    "value": "",
-                    "meta": {
-                        "type": "input",
-                        "content": "text"
-                    }
-                },
-                {
-                    "label": "Father's Email",
-                    "name": "father_email",
-                    "value": "",
-                    "meta": {
-                        "type": "input",
-                        "content": "text"
-                    }
-                },
-                {
-                    "label": "Father's CNIC",
-                    "name": "father_cnic",
-                    "value": "",
-                    "meta": {
-                        "type": "input",
-                        "content": "text"
-                    }
-                },
-                {
-                    "label": "Father's Number",
-                    "name": "father_phone_number",
-                    "value": "",
-                    "meta": {
-                        "type": "input",
-                        "content": "text"
-                    }
-                }
-            ]
-        }
+            },
 
-    ]
+            {
+                "label": "Campus",
+                "name": "company_id",
+                "value": null,
+                "meta": {
+                    "type": "select",
+                    "multiple": false,
+                    "source": "administration.companies.options"
+                }
+            },
+            {
+                "label": "Class",
+                "name": "classroom_id",
+                "value": null,
+                "meta": {
+                    "type": "select",
+                    "multiple": false,
+                    "source": "administration.classrooms.options"
+                }
+            },
+            {
+                "label": "Gender",
+                "name": "gender",
+                "value": null,
+                "column": 2,
+                "meta": {
+                    "type": "select",
+                    "options": "Sibtain\\Students\\App\\Enums\\StudentGender"
+                }
+            },
+            {
+                "label": "Father's Name",
+                "name": "father_name",
+                "value": "",
+                "meta": {
+                    "type": "input",
+                    "content": "text"
+                }
+            },
+            {
+                "label": "Father's CNIC",
+                "name": "father_cnic",
+                "value": "",
+                "meta": {
+                    "type": "input",
+                    "content": "text"
+                }
+            },
+            {
+                "label": "Father's Phone Number",
+                "name": "father_phone",
+                "value": "",
+                "meta": {
+                    "type": "input",
+                    "content": "text"
+                }
+            },
+            {
+                "label": "Father's Email Address",
+                "name": "father_email",
+                "value": "",
+                "meta": {
+                    "type": "input",
+                    "content": "text"
+                }
+            },
+            {
+                "label": "Address",
+                "name": "address",
+                "value": "",
+                "meta": {
+                    "type": "input",
+                    "content": "text"
+                }
+            },
+            {
+                "label": "City",
+                "name": "city",
+                "value": "",
+                "meta": {
+                    "type": "input",
+                    "content": "text"
+                }
+            },
+
+            {
+                "label": "Date of Birth",
+                "name": "dob",
+                "value": null,
+                "meta": {
+                    "type": "datepicker"
+                }
+            }
+
+
+
+
+        ]
+    }]
 }

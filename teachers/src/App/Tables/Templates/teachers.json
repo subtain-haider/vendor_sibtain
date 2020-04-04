@@ -1,6 +1,6 @@
 {
-    "name": "Teacher",
-    "routePrefix": "teacher",
+    "name": "Teachers",
+    "routePrefix": "teachers",
     "crtNo": true,
     "buttons": ["excel", "create", "show", "edit", "destroy"],
     "columns": [
@@ -40,11 +40,20 @@
                 "sortable"
             ]
         },
+        {
+            "label": "Subject",
+            "name": "subject",
+            "data": "teachers.subject",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
 
         {
             "label": "Campus",
-            "name": "campus",
-            "data": "teachers.campus",
+            "name": "company",
+            "data": "teachers.company",
             "meta": [
                 "searchable",
                 "sortable"

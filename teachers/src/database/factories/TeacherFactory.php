@@ -1,8 +1,7 @@
 <?php
 
 use Faker\Generator as Faker;
-use Sibtain\Campuses\App\Campus;
-use Sibtain\Subjects\App\Subject;
+use LaravelEnso\Companies\App\Models\Company;
 use Sibtain\Teachers\App\Teacher;
 
 $factory->define(Teacher::class, fn (Faker $faker) => [
@@ -11,7 +10,7 @@ $factory->define(Teacher::class, fn (Faker $faker) => [
     'phone_number' => $faker->e164PhoneNumber,
     'email' => $faker->email,
     'qualification' => $faker->word,
-    'campus_id' => Campus::all()->random()->id,
+    'company_id' => Company::all()->random()->id,
     'status' => 1,
-    'joining_date' => $faker->date($format = 'm-d-Y', $max = 'now'),
+    'joining_date' => $faker->date($format = 'Y-m-d', $max = 'now'),
 ]);

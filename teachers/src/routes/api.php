@@ -4,9 +4,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware(['web', 'auth', 'core'])
     ->group(function () {
-        Route::namespace('Sibtain\Teachers\App\Http\Controllers\Teacher')
-            ->prefix('api/teacher')
-            ->as('teacher.')
+        Route::namespace('Sibtain\Teachers\App\Http\Controllers\Teachers')
+            ->prefix('api/teachers')
+            ->as('teachers.')
             ->group(function () {
 
 //		Route::get('', 'Index')->name('index');
