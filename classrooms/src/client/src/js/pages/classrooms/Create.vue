@@ -10,7 +10,7 @@
                     <form-field v-bind="props"
                                 :params="params"/>
                 </template>
-                <template v-slot:grade_id="props">
+                <template v-slot:abbreviation="props">
                     <form-field v-bind="props"/>
                 </template>
             </enso-form>
