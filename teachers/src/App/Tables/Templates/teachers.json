@@ -16,7 +16,7 @@
         {
             "label": "CNIC",
             "name": "cnic",
-            "data": "teachers.cninc",
+            "data": "teachers.cnic",
             "meta": [
                 "searchable",
                 "sortable"
@@ -43,7 +43,7 @@
         {
             "label": "Subject",
             "name": "subject",
-            "data": "teachers.subject",
+            "data": "subjects.name",
             "meta": [
                 "searchable",
                 "sortable"
@@ -53,7 +53,7 @@
         {
             "label": "Campus",
             "name": "company",
-            "data": "teachers.company",
+            "data": "companies.name",
             "meta": [
                 "searchable",
                 "sortable"

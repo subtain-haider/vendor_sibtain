@@ -11,12 +11,12 @@ use LaravelEnso\Discussions\App\Traits\Discussable;
 use LaravelEnso\Documents\App\Traits\Documentable;
 use LaravelEnso\DynamicMethods\App\Traits\Relations;
 use LaravelEnso\Helpers\App\Traits\AvoidsDeletionConflicts;
-use Sibtain\Classrooms\App\Models\Person;
 use LaravelEnso\Rememberable\App\Traits\Rememberable;
 use LaravelEnso\Tables\App\Traits\TableCache;
 use LaravelEnso\TrackWho\App\Traits\CreatedBy;
 use LaravelEnso\TrackWho\App\Traits\UpdatedBy;
-use Sibtain\Teachers\App\Student;
+use Sibtain\Students\App\Student;
+use Sibtain\Teachers\App\Teacher;
 
 class Classroom extends Model
 {
@@ -24,14 +24,19 @@ class Classroom extends Model
         Documentable, Relations, Rememberable, TableCache, UpdatedBy;
 
     protected $fillable = [
-        'abbreviation', 'name', 'company_id'
+        'abbreviation', 'name', 'company_id','grade_id'
     ];
 
 
     public function teacher()
     {
-        return $this->belongsToMany(Student::class)
+        return $this->belongsToMany(Teacher::class)
             ->withPivot('teacher_id');
+    }
+
+    public function students()
+    {
+        return $this->hasMany(Student::class);
     }
 
     public static function owner()

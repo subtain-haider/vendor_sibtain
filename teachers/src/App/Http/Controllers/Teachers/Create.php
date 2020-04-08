@@ -3,11 +3,11 @@
 namespace Sibtain\Teachers\App\Http\Controllers\Teachers;
 
 use Illuminate\Routing\Controller;
-use Sibtain\Teachers\App\Forms\Builders\StudentForm;
+use Sibtain\Teachers\App\Forms\Builders\TeacherForm;
 
 class Create extends Controller
 {
-    public function __invoke(StudentForm $form)
+    public function __invoke(TeacherForm $form)
     {
         return ['form' => $form->create()];
     }

@@ -4,6 +4,7 @@ namespace Sibtain\Students\App;
 
 use Illuminate\Database\Eloquent\Model;
 use LaravelEnso\Companies\App\Models\Company;
+use LaravelEnso\People\App\Models\Person;
 use LaravelEnso\Tables\App\Traits\TableCache;
 use Sibtain\Classrooms\App\Models\Classroom;
 use Sibtain\Subjects\App\Subject;
@@ -14,6 +15,8 @@ class Student extends Model
 
     protected $fillable = ['name', 'cnic', 'phone', 'email', 'father_name', 'father_cnic', 'father_phone', 'father_email', 'address', 'city', 'company_id', 'classroom_id', 'gender', 'status', 'dob'];
     protected $dates = ['dob'];
+
+
 
     public function company()
     {

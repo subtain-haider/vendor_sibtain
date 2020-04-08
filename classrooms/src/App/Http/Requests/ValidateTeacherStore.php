@@ -2,7 +2,7 @@
 
 namespace Sibtain\Classrooms\App\Http\Requests;
 
-use Sibtain\Teachers\App\Student;
+use Sibtain\Teachers\App\Teacher;
 
 class ValidateTeacherStore extends ValidateTeacherUpdate
 {
@@ -17,7 +17,7 @@ class ValidateTeacherStore extends ValidateTeacherUpdate
 
     private function teacherExists()
     {
-        return Student::whereId($this->get('id'))
+        return Teacher::whereId($this->get('id'))
             ->whereHas('classrooms', fn ($classrooms) => $classrooms
                 ->whereId($this->get('classroom_id'))
             )->exists();

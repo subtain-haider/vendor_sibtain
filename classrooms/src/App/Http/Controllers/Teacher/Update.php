@@ -6,7 +6,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Routing\Controller;
 use Sibtain\Classrooms\App\Http\Requests\ValidateTeacherUpdate;
 use Sibtain\Classrooms\App\Models\Classroom;
-use Sibtain\Teacher\App\Models\Teacher;
+use Sibtain\Teachers\App\Teacher;
 
 class Update extends Controller
 {

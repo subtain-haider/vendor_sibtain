@@ -10,22 +10,40 @@
                     "value": null,
                     "meta": {
                         "type": "select",
+                        "custom": true,
                         "multiple": false,
                         "options": []
                     }
                 },
                 {
-                    "label": "Name",
-                    "name": "name",
-                    "value": "",
+                    "label": "Grade",
+                    "name": "grade_id",
+                    "value": null,
                     "meta": {
-                        "type": "input",
-                        "content": "text"
+                        "type": "select",
+                        "custom": true,
+                        "options": [],
+                        "source": "grades.options"
                     }
                 },
                 {
                     "label": "Abbreviation",
                     "name": "abbreviation",
+                    "value": "",
+                    "meta": {
+                        "custom": true,
+                        "type": "input",
+                        "content": "text"
+                    }
+                }
+            ]
+        },
+        {
+            "columns": 1,
+            "fields": [
+                {
+                    "label": "Name",
+                    "name": "name",
                     "value": "",
                     "meta": {
                         "type": "input",

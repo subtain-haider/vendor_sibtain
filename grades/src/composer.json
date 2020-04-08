@@ -1,0 +1,24 @@
+{
+    "name": "sibtain/grades",
+    "type": "library",
+    "description": "",
+    "authors": [],
+    "keywords": [],
+    "homepage": "https://www.laravel-enso.com",
+    "require": {
+        "php": ">=7.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sibtain\\Grades\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sibtain\\Grades\\AppServiceProvider",
+                "Sibtain\\Grades\\AuthServiceProvider"
+            ]
+        }
+    }
+}

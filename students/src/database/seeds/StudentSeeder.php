@@ -10,9 +10,7 @@ class StudentSeeder extends Seeder
 
     public function run()
     {
-        factory(Student::class, 100)->create()->each(function ($student){
-            $student->classroom()->sync(Classroom::all()->random()->id,);
-        });
+        factory(Student::class, 100)->create();
 
 
     }

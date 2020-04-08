@@ -4,6 +4,7 @@ namespace Sibtain\Teachers\App;
 
 use Illuminate\Database\Eloquent\Model;
 use LaravelEnso\Companies\App\Models\Company;
+use LaravelEnso\People\App\Models\Person;
 use LaravelEnso\Tables\App\Traits\TableCache;
 use Sibtain\Classrooms\App\Models\Classroom;
 use Sibtain\Subjects\App\Subject;
@@ -14,6 +15,12 @@ class Teacher extends Model
 
     protected $fillable = ['name', 'cnic', 'phone_number', 'email', 'qualification', 'company_id', 'status', 'joining_date'];
     protected $dates = ['joining_date'];
+
+
+    public function hasUser()
+    {
+        return $this->user()->exists();
+    }
 
     public function company()
     {

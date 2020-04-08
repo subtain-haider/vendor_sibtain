@@ -2,6 +2,8 @@
 
 namespace Sibtain\Classrooms\App\Forms\Builders;
 
+use App\Grade;
+use Illuminate\Support\Facades\Auth;
 use LaravelEnso\Companies\App\Models\Company;
 use Sibtain\Classrooms\App\Models\Classroom;
 use LaravelEnso\Forms\App\Services\Form;
@@ -14,7 +16,7 @@ class ClassroomForm
 
     public function __construct()
     {
-        $this->form = (new Form(static::TemplatePath))->options('company_id', Company::get(['id','name']));
+        $this->form = (new Form(static::TemplatePath))->options('company_id', Company::get(['id','name','code']));
 
     }
 
@@ -25,7 +27,13 @@ class ClassroomForm
 
     public function edit(Classroom $classroom)
     {
-        return $this->form
-            ->edit($classroom);
+        //        For Admin
+        if (Auth::user()->role->name == 'admin' || Auth::user()->role->name == 'super') {
+            return $this->form
+                ->edit($classroom);
+        }
+        else{
+            return true;
+        }
     }
 }

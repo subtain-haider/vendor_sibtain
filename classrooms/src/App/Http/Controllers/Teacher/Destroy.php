@@ -6,13 +6,13 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Routing\Controller;
 use Sibtain\Classrooms\App\Exceptions\Classroom as Exception;
 use Sibtain\Classrooms\App\Models\Classroom;
-use Sibtain\Teachers\App\Student;
+use Sibtain\Teachers\App\Teacher;
 
 class Destroy extends Controller
 {
     use AuthorizesRequests;
 
-    public function __invoke(Classroom $classroom, Student $teacher)
+    public function __invoke(Classroom $classroom, Teacher $teacher)
     {
 //        $this->authorize('manage-people', $classroom);
 

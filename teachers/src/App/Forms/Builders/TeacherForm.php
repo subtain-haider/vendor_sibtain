@@ -4,7 +4,7 @@ namespace Sibtain\Teachers\App\Forms\Builders;
 
 use LaravelEnso\Companies\App\Models\Company;
 use Sibtain\Subjects\App\Subject;
-use Sibtain\Teachers\App\Student;
+use Sibtain\Teachers\App\Teacher;
 use LaravelEnso\Forms\App\Services\Form;
 
 class TeacherForm
@@ -24,7 +24,7 @@ class TeacherForm
         return $this->form->create();
     }
 
-    public function edit(Student $teacher)
+    public function edit(Teacher $teacher)
     {
         return $this->form->edit($teacher);
     }

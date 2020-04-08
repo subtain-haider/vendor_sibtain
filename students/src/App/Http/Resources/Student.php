@@ -3,7 +3,6 @@
 namespace Sibtain\Students\App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
-use LaravelEnso\TrackWho\App\Http\Resources\TrackWho;
 
 class Student extends JsonResource
 {

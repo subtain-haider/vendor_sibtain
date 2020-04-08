@@ -15,6 +15,10 @@ class CreateClassroomsTable extends Migration
             $table->foreign('company_id')->references('id')
                 ->on('companies')->onDelete('cascade');
 
+            $table->integer('grade_id')->unsigned()->nullable();
+            $table->foreign('grade_id')->references('id')
+                ->on('grades')->onDelete('cascade');
+
             $table->string('name');
             $table->string('abbreviation');
 

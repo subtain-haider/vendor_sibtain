@@ -2,13 +2,13 @@
 
 namespace Sibtain\Teachers\App\Http\Controllers\Teachers;
 
-use Sibtain\Teachers\App\Student;
+use Sibtain\Teachers\App\Teacher;
 use Illuminate\Routing\Controller;
-use Sibtain\Teachers\App\Forms\Builders\StudentForm;
+use Sibtain\Teachers\App\Forms\Builders\TeacherForm;
 
 class Edit extends Controller
 {
-    public function __invoke(Student $teacher, StudentForm $form)
+    public function __invoke(Teacher $teacher, TeacherForm $form)
     {
         return ['form' => $form->edit($teacher)];
     }

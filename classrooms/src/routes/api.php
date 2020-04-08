@@ -9,4 +9,5 @@ Route::namespace('Sibtain\Classrooms\App\Http\Controllers')
     ->group(function () {
         require 'app/classrooms.php';
         require 'app/teacher.php';
+        require 'app/student.php';
     });

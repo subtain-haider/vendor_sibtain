@@ -18,6 +18,7 @@ class ValidateClassroomRequest extends FormRequest
             'abbreviation' => ['required', 'string', $this->unique('abbreviation')],
             'name' => ['required', 'string', $this->unique('name')],
             'company_id' => 'required|exists:companies,id',
+            'grade_id' => 'required|exists:grades,id',
         ];
     }
 
